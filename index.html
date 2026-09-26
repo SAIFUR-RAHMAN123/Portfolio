@@ -1,0 +1,836 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saifur Rahman — Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+      (function () {
+        // ⚠️ Replace 'YOUR_PUBLIC_KEY' with your EmailJS public key
+        emailjs.init({ publicKey: "PGZcLm-p1_sZPYBmA" });
+      })();
+    </script>
+  </head>
+  <body>
+    <!-- ── HEADER / NAV ── -->
+    <header>
+      <div class="logo">S<span>.</span>R</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact" class="nav-cta">Hire Me</a>
+      </nav>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menu">☰</button>
+    </header>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#about" onclick="closeMobileNav()">About</a>
+      <a href="#skills" onclick="closeMobileNav()">Skills</a>
+      <a href="#projects" onclick="closeMobileNav()">Projects</a>
+      <a href="#resume" onclick="closeMobileNav()">Resume</a>
+      <a href="#contact" onclick="closeMobileNav()">Hire Me</a>
+    </div>
+
+    <!-- ── HERO ── -->
+    <section id="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <div class="hero-tag">✦ Available for Freelance ✦</div>
+        <h1 class="hero-name">
+          Saifur Rahman<br />
+          <em> Full-Stack Dev + ML &amp; Data Analytics.</em>
+        </h1>
+        <p class="hero-sub">
+          BS in Computer Science & Data Analytics student passionate about
+          building modern web applications and exploring machine learning and
+          data analytics — focused on creating responsive, real-world, and
+          user-friendly solutions.
+        </p>
+        <p class="hero-sub2">
+          Currently improving my full-stack development, machine learning, and
+          data analytics skills through practical projects.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn-primary">View Projects →</a>
+          <a href="#contact" class="btn-outline">Let's Talk</a>
+        </div>
+        <div class="hero-stats">
+          👨‍💻 Open to internships and learning opportunities
+        </div>
+      </div>
+      <div class="hero-image-wrap">
+        <div class="hero-img-ring">
+          <div class="hero-img-inner">
+            <div class="hero-avatar-placeholder">🚀</div>
+          </div>
+        </div>
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Available to work
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ABOUT ── -->
+    <section id="about">
+      <div class="about-grid">
+        <div class="about-img-wrap">
+          <div class="about-img-box">
+            🧑‍🎨
+            <div class="about-chip">✦ Based in India</div>
+          </div>
+        </div>
+        <div class="about-text">
+          <div class="section-label">About Me</div>
+          <h2 class="section-title">
+            Turning ideas into<br />digital reality.
+          </h2>
+          <p>
+            Hey! I'm Saifur Rahman — a passionate full-stack developer
+            interested in machine learning and data analytics, who loves
+            building clean, responsive, and user-friendly web applications.
+          </p>
+          <p>
+            Currently pursuing a BS in Computer Science & Data Analytics, I am
+            actively working on real-world projects and improving my skills in
+            full-stack development, machine learning, and data analytics.
+          </p>
+          <div class="about-detail-grid">
+            <div class="about-detail">
+              <div class="label">Full Name</div>
+              <div class="value">Saifur Rahman</div>
+            </div>
+            <div class="about-detail">
+              <div class="label">Email</div>
+              <div class="value">mdrahmansaifur1@gmail.com</div>
+            </div>
+            <div class="about-detail">
+              <div class="label">Degree</div>
+              <div class="value">B.S. CS & Data Analytics</div>
+            </div>
+            <div class="about-detail">
+              <div class="label">Freelance</div>
+              <div class="value">Open to Opportunities</div>
+            </div>
+          </div>
+          <a href="#contact" class="btn-primary">Download CV →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SKILLS / EXPERIENCE ── -->
+    <section id="skills">
+      <div class="skills-layout">
+        <div class="skills-left">
+          <div class="section-label">Expertise</div>
+          <h2 class="section-title">Skills &amp;<br />Technologies.</h2>
+          <p class="section-sub">
+            Core technologies and tools I use across full-stack development,
+            data science, and machine learning to build real-world projects.
+          </p>
+          <div class="tools-list">
+            <h4>🛠 Tools &amp; Platforms</h4>
+            <div class="tool-tags">
+              <span class="tool-tag">Git / GitHub</span>
+              <span class="tool-tag">VS Code</span>
+              <span class="tool-tag">Postman</span>
+              <span class="tool-tag">Docker</span>
+              <span class="tool-tag">Render / Railway / Vercel</span>
+              <span class="tool-tag">Streamlit</span>
+              <span class="tool-tag">Power BI</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-cards">
+          <div class="skill-card">
+            <div class="skill-header">
+              <div class="skill-icon">💻</div>
+              <div class="skill-name">Programming Languages</div>
+            </div>
+            <div class="skill-tags">
+              <span>Python</span><span>C</span><span>C++</span><span>Java</span
+              ><span>JavaScript</span><span>SQL</span><span>HTML</span
+              ><span>CSS</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-header">
+              <div class="skill-icon">🧠</div>
+              <div class="skill-name">Data Science / ML</div>
+            </div>
+            <div class="skill-tags">
+              <span>Pandas</span><span>NumPy</span><span>Scikit-learn</span
+              ><span>Matplotlib / Seaborn</span><span>Feature Engineering</span
+              ><span>PCA &amp; Clustering</span
+              ><span>Classification Models</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-header">
+              <div class="skill-icon">🗄️</div>
+              <div class="skill-name">Backend Development</div>
+            </div>
+            <div class="skill-tags">
+              <span>Node.js</span><span>Express.js</span><span>Flask</span
+              ><span>REST APIs</span><span>JWT Authentication</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-header">
+              <div class="skill-icon">🗃️</div>
+              <div class="skill-name">Databases</div>
+            </div>
+            <div class="skill-tags">
+              <span>MongoDB</span><span>SQL</span><span>SQLite</span
+              ><span>MongoDB Atlas</span><span>Mongoose</span
+              ><span>SQLAlchemy</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-header">
+              <div class="skill-icon">🎨</div>
+              <div class="skill-name">Frontend Development</div>
+            </div>
+            <div class="skill-tags">
+              <span>React.js</span><span>Vite</span><span>Tailwind CSS</span
+              ><span>Bootstrap</span><span>HTML5</span><span>CSS3</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-header">
+              <div class="skill-icon">🔧</div>
+              <div class="skill-name">Tools & Technologies</div>
+            </div>
+            <div class="skill-tags">
+              <span>Git / GitHub</span><span>Docker</span><span>Postman</span
+              ><span>Joblib / Pickle</span><span>Streamlit</span
+              ><span>Power BI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PROJECTS ── -->
+    <section id="projects">
+      <div class="section-label">Portfolio</div>
+      <h2 class="section-title">Featured Projects.</h2>
+      <p class="section-sub">
+        A selection of projects I've built while learning and exploring
+        real-world applications.
+      </p>
+      <div class="projects-grid">
+        <article class="project-card featured">
+          <div class="project-thumb pt-1">
+            <img
+              src="images/fraud-guard.png"
+              alt="Fraud Guard project banner"
+              onerror="this.style.display = 'none'"
+            />
+            <span class="thumb-fallback">🛡️</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Flask</span>
+              <span class="project-tag">Scikit-learn</span>
+              <span class="project-tag">Pandas</span>
+            </div>
+            <h3 class="project-title">
+              Fraud Guard — Financial Fraud Detection
+            </h3>
+            <p class="project-desc">
+              A financial fraud detection system that uses a trained machine
+              learning model to flag potentially fraudulent transactions. Built
+              the Flask backend and prediction API, handled data preprocessing,
+              feature engineering, and missing-value handling, and analyzed
+              transaction frequency, amount, mode, location, and time patterns.
+              Model persisted with Joblib/Pickle and deployed on Render.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://fraudguard-frontend-kohl.vercel.app"
+                class="project-link"
+                >↗ Live Demo</a
+              >
+              <a
+                href="https://github.com/SAIFUR-RAHMAN123/FraudGuard"
+                class="project-link"
+                >◍ GitHub</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb pt-2">
+            <img
+              src="images/healthbuddy.png"
+              alt="HealthBuddy project banner"
+              onerror="this.style.display = 'none'"
+            />
+            <span class="thumb-fallback">🏥</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Streamlit</span>
+              <span class="project-tag">Google Gemini</span>
+              <span class="project-tag">OCR</span>
+            </div>
+            <h3 class="project-title">
+              HealthBuddy — AI Medical Report Summarizer
+            </h3>
+            <p class="project-desc">
+              An AI-powered app that processes medical reports and turns them
+              into simplified summaries and symptom-related insights, using
+              modular ingestion, summary, and symptom agents alongside OCR and
+              parsing tools.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://healthbuddy-ui4our.streamlit.app/"
+                class="project-link"
+                >↗ Live Demo</a
+              >
+              <a
+                href="https://github.com/SAIFUR-RAHMAN123/HealthBuddy"
+                class="project-link"
+                >◍ GitHub</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb pt-3">
+            <img
+              src="images/volunteerhub.png"
+              alt="VolunteerHub project banner"
+              onerror="this.style.display = 'none'"
+            />
+            <span class="thumb-fallback">🤝</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">React.js</span>
+              <span class="project-tag">Node.js</span>
+              <span class="project-tag">Express.js</span>
+              <span class="project-tag">MongoDB Atlas</span>
+            </div>
+            <h3 class="project-title">VolunteerHub</h3>
+            <p class="project-desc">
+              A full-stack platform connecting volunteers with opportunities,
+              featuring JWT-based authentication, volunteer management, an admin
+              dashboard, and REST APIs backed by MongoDB.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://volunteer-hub-ddk8.onrender.com"
+                class="project-link"
+                >↗ Live Demo</a
+              >
+              <a
+                href="https://github.com/SAIFUR-RAHMAN123/volunteer-hub"
+                class="project-link"
+                >◍ GitHub</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb pt-4">
+            <img
+              src="images/bharat-virasat.png"
+              alt="BharatVirasat project banner"
+              onerror="this.style.display = 'none'"
+            />
+            <span class="thumb-fallback">🏛️</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Node.js</span>
+              <span class="project-tag">Express.js</span>
+              <span class="project-tag">MongoDB</span>
+              <span class="project-tag">Mongoose</span>
+            </div>
+            <h3 class="project-title">BharatVirasat</h3>
+            <p class="project-desc">
+              A heritage and artisan platform showcasing Indian heritage sites,
+              artisans, and products. Built backend features covering
+              authentication, heritage sites, artisans, products, orders,
+              events, booking, chat, and analytics through REST APIs.
+            </p>
+            <div class="project-links">
+              <a href="https://bharatvirasat.onrender.com" class="project-link"
+                >↗ Live Demo</a
+              >
+              <a
+                href="https://github.com/SAIFUR-RAHMAN123/BharatVirasat"
+                class="project-link"
+                >◍ GitHub</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb pt-5">
+            <img
+              src="images/library-management.png"
+              alt="Library Management System project banner"
+              onerror="this.style.display = 'none'"
+            />
+            <span class="thumb-fallback">📚</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Flask</span>
+              <span class="project-tag">SQLAlchemy</span>
+              <span class="project-tag">SQLite</span>
+              <span class="project-tag">React.js</span>
+            </div>
+            <h3 class="project-title">Library Management System</h3>
+            <p class="project-desc">
+              A full-stack library management application for handling books and
+              library operations, with a Flask + SQLAlchemy backend and a React
+              frontend.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://library-management-system-six-lemon-91.vercel.app/"
+                class="project-link"
+                >↗ Live Demo</a
+              >
+              <a
+                href="https://github.com/SAIFUR-RAHMAN123/Library_Management_System"
+                class="project-link"
+                >◍ GitHub</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb pt-6">
+            <img
+              src="images/filesystem-ui.png"
+              alt="File System UI project banner"
+              onerror="this.style.display = 'none'"
+            />
+            <span class="thumb-fallback">🗂️</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">React.js</span>
+              <span class="project-tag">Vite</span>
+              <span class="project-tag">Tailwind CSS</span>
+            </div>
+            <h3 class="project-title">File System UI</h3>
+            <p class="project-desc">
+              A frontend interface that recreates a file-system-like experience
+              for browsing, organizing, and managing files and folders.
+            </p>
+            <div class="project-links">
+              <a href="https://file-system-ui.vercel.app" class="project-link"
+                >↗ Live Demo</a
+              >
+              <a
+                href="https://github.com/SAIFUR-RAHMAN123/file-system-ui"
+                class="project-link"
+                >◍ GitHub</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb pt-7">
+            <img
+              src="images/zakat-calculator.png"
+              alt="Zakat Calculator project banner"
+              onerror="this.style.display = 'none'"
+            />
+            <span class="thumb-fallback">✅</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Zakat Calculator</h3>
+            <p class="project-desc">
+              A responsive web-based Zakat Calculator designed to make Zakat estimation simple and convenient. Users can enter their eligible wealth and asset values to calculate the estimated Zakat amount instantly. The application uses a 2.5% calculation rate and provides a clean, user-friendly interface. Built with HTML, CSS, and JavaScript, the project focuses on responsive design, simple interactions, and real-time calculation.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://saifur-rahman123.github.io/zakat-calculator/"
+                class="project-link"
+                >↗ Live Demo</a
+              >
+              <a
+                href="https://github.com/SAIFUR-RAHMAN123/zakat-calculator"
+                class="project-link"
+                >◍ GitHub</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-thumb pt-7">
+            <img
+              src="images/peblo-minitv.png"
+              alt="Peblo miniTV project banner"
+              onerror="this.style.display = 'none'"
+            />
+            <span class="thumb-fallback">📺</span>
+          </div>
+
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">React.js</span>
+              <span class="project-tag">Vite</span>
+              <span class="project-tag">CSS</span>
+            </div>
+
+            <h3 class="project-title">Peblo miniTV</h3>
+
+            <p class="project-desc">
+              A full-stack streaming platform with a CMS for managing shows, episodes, and artwork, and a Netflix-style viewer for browsing published content. Built with FastAPI, PostgreSQL, React, TypeScript, and Docker, with role-based access, catalog publishing, validation, and automated testing.
+            </p>
+
+            <div class="project-links">
+              <a
+                href="https://saifur-rahman123.github.io/Peblo_miniTV/"
+                class="project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >↗ Live Demo</a
+              >
+
+              <a
+                href="https://github.com/SAIFUR-RAHMAN123/Peblo_miniTV"
+                class="project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >◍ GitHub</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-thumb pt-7">
+            <img
+              src="images/esim-tool-manager.png"
+              alt="eSIM Tool Manager project banner"
+              onerror="this.style.display = 'none'"
+            />
+            <span class="thumb-fallback">📱</span>
+          </div>
+
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">React.js</span>
+              <span class="project-tag">Vite</span>
+              <span class="project-tag">CSS</span>
+            </div>
+
+            <h3 class="project-title">eSIM Tool Manager</h3>
+
+        <p class="project-desc">
+          A Python-based automation tool for managing external dependencies used by eSim, including Ngspice and KiCad. Automates tool installation through OS package managers such as apt and Chocolatey, performs dependency checks, verifies installed versions, and provides a CLI for managing tools. Built using Python’s standard library with unit tests for dependency checking, version parsing, and installation workflows.
+        </p>
+
+        <div class="project-links">
+              <a
+                href="#"
+                class="project-link"
+                >↗ Live Demo</a
+              >
+              <a
+                href="https://github.com/SAIFUR-RAHMAN123/esim-tool-manager"
+                class="project-link"
+                >◍ GitHub</a
+              >
+            </div>
+      </div>
+    </section>
+
+    <!-- ── RESUME ── -->
+    <section id="resume">
+      <div class="section-label">Experience</div>
+      <h2 class="section-title">Experience &amp; Education.</h2>
+      <p class="section-sub">
+        A journey of learning, building, and real-world experience.
+      </p>
+
+      <div class="resume-grid">
+        <!-- Experience -->
+        <div class="resume-col">
+          <h3>💻 Experience</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="tl-date">2026</div>
+              <div class="tl-title">Full-Stack Development Learner</div>
+              <div class="tl-place">Self Learning</div>
+              <div class="tl-desc">
+                Learning and building web applications using HTML, CSS,
+                JavaScript, and Python. Working on real-world projects like
+                fraud detection systems.
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="tl-date">2025</div>
+              <div class="tl-title">Data Analytics &amp; ML Learner</div>
+              <div class="tl-place">Academic &amp; Self Projects</div>
+              <div class="tl-desc">
+                Exploring data analysis, visualization, and basic machine
+                learning concepts using Python and Pandas.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="resume-col">
+          <h3>🎓 Education</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="tl-date">2026 — Present</div>
+              <div class="tl-title">
+                B.S. in Computer Science &amp; Data Analytics
+              </div>
+              <div class="tl-place">IIT Patna</div>
+              <div class="tl-desc">
+                Pursuing degree with focus on web development, data analytics,
+                and machine learning. Actively building real-world projects.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Achievements — Certifications & Honors only, no projects -->
+      <div class="achievements-section">
+        <h3>🏆 Key Highlights</h3>
+        <div class="achievement-list">
+          <div class="achievement-card">
+            <div class="ach-icon">📜</div>
+            <div>
+              <div class="ach-title">Full-Stack Development Practice</div>
+              <div class="ach-desc">
+                Built and experimented with web applications using HTML, CSS,
+                JavaScript, and Python.
+              </div>
+            </div>
+          </div>
+
+          <div class="achievement-card">
+            <div class="ach-icon">📊</div>
+            <div>
+              <div class="ach-title">Data Analytics Practice</div>
+              <div class="ach-desc">
+                Worked with datasets using Pandas and NumPy, and created basic
+                visualizations.
+              </div>
+            </div>
+          </div>
+
+          <div class="achievement-card">
+            <div class="ach-icon">📚</div>
+            <div>
+              <div class="ach-title">Problem Solving & Continuous Learning</div>
+              <div class="ach-desc">
+                Actively improving skills through hands-on projects, coding
+                practice, and online learning resources.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONTACT ── -->
+    <section id="contact">
+      <div class="contact-wrap">
+        <div class="contact-info">
+          <div class="section-label">Get In Touch</div>
+          <h2 class="section-title">Let's build<br />something great.</h2>
+          <p>
+            Have a project idea or an opportunity? Feel free to reach out. I'm
+            always open to learning, collaboration, and new experiences.
+          </p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="ci-icon">📧</div>
+              <div>
+                <div class="ci-label">Email</div>
+                <div class="ci-value">mdrahmansaifur1@gmail.com</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ci-icon">📍</div>
+              <div>
+                <div class="ci-label">Location</div>
+                <div class="ci-value">India — Open to Remote</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ci-icon">📞</div>
+              <div>
+                <div class="ci-label">Phone</div>
+                <div class="ci-value">+91 8409458057</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" placeholder="Your Name" />
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" placeholder="Your Surname" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="you@example.com" />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject">
+                <option value="" disabled selected>What's this about?</option>
+                <option>Internship Opportunity</option>
+                <option>Freelance Project</option>
+                <option>Collaboration</option>
+                <option>Just Saying Hi</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                placeholder="Write your message here..."
+              ></textarea>
+            </div>
+            <button
+              class="btn-send"
+              type="button"
+              id="sendBtn"
+              onclick="sendMessage()"
+            >
+              Send Message →
+            </button>
+            <div id="formStatus" class="form-status"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-logo">S<span>.</span>R</div>
+        <p class="footer-copy">
+          © 2026 Saifur Rahman. Built with passion and continuous learning.
+        </p>
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/saifur-rahman-3b8aab316/"
+            class="social-link"
+            >LinkedIn</a
+          >
+          <a href="https://github.com/SAIFUR-RAHMAN123 " class="social-link"
+            >GitHub</a
+          >
+          <a href="#" class="social-link">Twitter</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // ── MOBILE NAV ──
+      function closeMobileNav() {
+        document.getElementById("mobileNav").classList.remove("open");
+      }
+      document
+        .getElementById("hamburgerBtn")
+        .addEventListener("click", function () {
+          document.getElementById("mobileNav").classList.toggle("open");
+        });
+
+      // ── CONTACT FORM via EmailJS ──
+      // ⚠️  Setup steps:
+      //  1. Go to https://emailjs.com and create a free account
+      //  2. Create an Email Service (Gmail recommended) — note your SERVICE ID
+      //  3. Create an Email Template with variables: {{from_name}}, {{from_email}}, {{subject}}, {{message}}
+      //     Note your TEMPLATE ID
+      //  4. Go to Account > API Keys — copy your PUBLIC KEY
+      //  5. Replace the three placeholders below with your actual IDs
+      const EMAILJS_SERVICE_ID = "service_x9l3j88"; // e.g. "service_abc123"
+      const EMAILJS_TEMPLATE_ID = "template_n0bcg8s"; // e.g. "template_xyz789"
+
+      function sendMessage() {
+        const fname = document.getElementById("fname").value.trim();
+        const lname = document.getElementById("lname").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const subject = document.getElementById("subject").value;
+        const message = document.getElementById("message").value.trim();
+        const status = document.getElementById("formStatus");
+        const btn = document.getElementById("sendBtn");
+
+        if (!fname || !email || !subject || !message) {
+          status.textContent = "⚠️ Please fill in all required fields.";
+          status.className = "form-status error";
+          return;
+        }
+
+        btn.textContent = "Sending...";
+        btn.disabled = true;
+
+        emailjs
+          .send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+            from_name: fname + " " + lname,
+            from_email: email,
+            subject: subject,
+            message: message,
+          })
+          .then(
+            function () {
+              status.textContent =
+                "✅ Message sent! I will get back to you soon.";
+              status.className = "form-status success";
+              btn.textContent = "Send Message →";
+              btn.disabled = false;
+              // Reset form
+              ["fname", "lname", "email", "message"].forEach(
+                (id) => (document.getElementById(id).value = ""),
+              );
+              document.getElementById("subject").selectedIndex = 0;
+            },
+            function (error) {
+              status.textContent =
+                "❌ Failed to send. Please email me directly.";
+              status.className = "form-status error";
+              btn.textContent = "Send Message →";
+              btn.disabled = false;
+            },
+          );
+      }
+    </script>
+  </body>
+</html>
